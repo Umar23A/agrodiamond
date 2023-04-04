@@ -1,0 +1,5 @@
+{% for posts in post %}
+    {{ posts.nomi }}
+    {% empty %}
+        <h1>Ushbu kategoriyada post mavjud emas</h1>
+{% endfor %}
