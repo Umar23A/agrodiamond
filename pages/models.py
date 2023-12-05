@@ -20,6 +20,7 @@ def upload_to(name):
         )
     return handle
 
+
 class Category(TranslateMixin,models.Model):
     translate_attributes = ['name']
     name_uz = models.CharField(max_length=50,verbose_name=_("Nomi (uz)"))
@@ -32,6 +33,7 @@ class Category(TranslateMixin,models.Model):
     class Meta:
         verbose_name = 'Kategoriya'
         verbose_name_plural = 'Kategoriyalar'
+
 
 class Post(TranslateMixin,models.Model):
     translate_attributes = ['nomi']

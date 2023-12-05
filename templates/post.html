@@ -1,5 +1,9 @@
-{% for posts in post %}
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+    {% for posts in post %}
     {{ posts.nomi }}
     {% empty %}
-        <h1>Ushbu kategoriyada post mavjud emas</h1>
-{% endfor %}
+    <h1>Ushbu kategoriyada post mavjud emas</h1>
+    {% endfor %}
+{% endblock %}
