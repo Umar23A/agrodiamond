@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-07 12:26+0500\n"
+"POT-Creation-Date: 2023-12-10 01:53+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1476,15 +1476,23 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
-#: pages/models.py:26 pages/models.py:41
+#: pages/models.py:26 pages/models.py:42
 msgid "Nomi (uz)"
 msgstr ""
 
-#: pages/models.py:27 pages/models.py:42
+#: pages/models.py:27 pages/models.py:43
 msgid "Nomi (en)"
 msgstr ""
 
-#: pages/views.py:8 templates/layouts/base.html:58
+#: pages/models.py:44
+msgid "Content (uz)"
+msgstr ""
+
+#: pages/models.py:45
+msgid "Content (en)"
+msgstr ""
+
+#: pages/views.py:8 templates/layouts/base.html:59
 msgid "Bosh sahifa"
 msgstr "Home"
 
@@ -1500,18 +1508,21 @@ msgstr "Our<span> Products</span>"
 msgid "Batafsil"
 msgstr "More"
 
-#: templates/layouts/base.html:61
+#: templates/layouts/base.html:62
 msgid "Biz haqimizda"
 msgstr "About"
 
-#: templates/layouts/base.html:64
+#: templates/layouts/base.html:65
+msgid "Bizning servis"
+msgstr "Our Services"
+
+#: templates/layouts/base.html:68
 msgid "Kontakt"
 msgstr "Contact Us"
 
-#: templates/layouts/base.html:159
+#: templates/layouts/base.html:165
 msgid "Barcha huquqlar himoyalangan"
 msgstr "All rights reserved"
 
-#: templates/post.html:7
-msgid "Ushbu kategoriyada post mavjud emas"
-msgstr "There are no posts in this category"
+#~ msgid "Ushbu kategoriyada post mavjud emas"
+#~ msgstr "There are no posts in this category"

@@ -277,8 +277,9 @@ a.w3_agile_vimeo:hover{
 	width:60%;
 }
 .w3_banner_info_grid h3{
-	font-size:2em;
+	font-size:60px;
 	color:#fff;
+    font-weight: 900;
 	line-height:1.5em;
 }
 .w3_banner_info_grid ul li{
@@ -293,7 +294,6 @@ a.w3_agile_vimeo:hover{
 }
 .w3l_contact,.w3ls_more:hover{
 	border:2px solid #fff;
-	color:#a4dd25 !important;
 	background:none;
 }
 .w3ls_more,.w3l_contact:hover{
@@ -2962,7 +2962,7 @@ h2.typoh2{
 }
 @media only screen and (min-width: 992px)  {
     .navbar-nav {
-        margin-left: 300px;
+        margin-left:190px;
     }
 
 }
