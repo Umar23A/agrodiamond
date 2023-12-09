@@ -277,9 +277,9 @@ a.w3_agile_vimeo:hover{
 	width:60%;
 }
 .w3_banner_info_grid h3{
-	font-size:60px;
+	font-size:70px;
 	color:#fff;
-    font-weight: 900;
+    font-weight: 1000;
 	line-height:1.5em;
 }
 .w3_banner_info_grid ul li{
@@ -306,6 +306,9 @@ a.w3_agile_vimeo:hover{
 }
 span.char3 {
     text-transform: initial;
+}
+.txt{
+    font-family: "Bree Serif", serif;
 }
 .w3_banner_info_grid p{
 	margin:1em 0 4em;

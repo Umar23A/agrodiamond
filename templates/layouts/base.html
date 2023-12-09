@@ -47,8 +47,8 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="min-height:40px">
     <div class="container">
-        <a style="text-decoration: none;font-size: 22px" class="" href="#"><img style="width: 70px" src="{% static 'images/agro.png' %}" alt="">
-            <span class="text-success">Agro </span><span style="color: #1480c3">Diamond</span></a>
+        <a style="text-decoration: none;font-size: 22px" class="" href="#"><img style="width: 75px" src="{% static 'images/agro.png' %}" alt="">
+            <span class="text-success txt">AGRO</span><span class="" style="color: #1480c3">DIAMOND</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,16 +56,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-center me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active fs-5 me-4" aria-current="page" href="{% url 'home' %}" style="color: #2c810e">{% translate 'Bosh sahifa' %}</a>
+                    <a class="nav-link active fs-5 me-4 txt" aria-current="page" href="{% url 'home' %}" style="color: #2c810e">{% translate 'Bosh sahifa' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-5 me-4" href="#" style="color: #2c810e">{% translate 'Biz haqimizda' %}</a>
+                    <a class="nav-link fs-5 me-4 txt" href="#" style="color: #2c810e">{% translate 'Biz haqimizda' %}</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link fs-5 me-4" href="#" style="color: #2c810e">{% translate 'Bizning servis' %}</a>
+                    <a class="nav-link fs-5 me-4 txt" href="#" style="color: #2c810e">{% translate 'Bizning servis' %}</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="#" style="color: #2c810e">{% translate 'Kontakt' %}</a>
+                    <a class="nav-link fs-5 txt" href="#" style="color: #2c810e">{% translate 'Kontakt' %}</a>
                 </li>
 
 
@@ -73,10 +73,10 @@
             </ul>
 
             <ul class="navbar-nav text-center">
-                 <li class="nav-item fs-5">
+                 <li class="nav-item fs-5 ">
 
                     {% for l in LANGUAGES %}
-                        <a href="/{{ l.0 }}" class="" style="text-decoration: none; color: #2c810e">
+                        <a href="/{{ l.0 }}" class="txt" style="text-decoration: none; color: #2c810e">
                             {{ l.1 }}
                         </a>
                     {% endfor %}
@@ -132,13 +132,13 @@
             <div class="col-lg-3">
                 <ul class="text-center mt-5 mb-5">
                     <li>
-                        <a class="fs-5 text-white" href="" style="text-decoration: none"><span class="txa">Home</span></a>
+                        <a class="fs-5 text-white txt" href="" style="text-decoration: none"><span class="txa">Home</span></a>
                     </li>
                     <li>
-                        <a class="fs-5 text-white txa" href="" style="text-decoration: none"><span class="txa">About</span></a>
+                        <a class="fs-5 text-white txt" href="" style="text-decoration: none"><span class="txa">About</span></a>
                     </li>
                     <li>
-                        <a class="fs-5 text-white txa" href="" style="text-decoration: none"><span class="txa">Contact</span></a>
+                        <a class="fs-5 text-white txt" href="" style="text-decoration: none"><span class="txa">Contact</span></a>
                     </li>
                 </ul>
             </div>
