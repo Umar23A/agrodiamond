@@ -1,9 +1,26 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
+{% load static i18n %}
 {% block content %}
-    {% for posts in post %}
-    {{ posts.nomi }}
-    {% empty %}
-    <h1>Ushbu kategoriyada post mavjud emas</h1>
-    {% endfor %}
+    <div class="container mt-4 mt-4">
+        <div class="row">
+         {% for posts in post %}
+        <div class="col-lg-4">
+            <div class="card text-center mb-4" style="">
+                {% if posts.image %}
+                    <img src="{{ posts.image.url }}" class="card-img-top card-image" alt="...">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ posts.nomi }}</h5>
+                    <p class="card-text">{{ posts.content }}</p>
+                </div>
+            </div>
+
+
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+
+
+
 {% endblock %}

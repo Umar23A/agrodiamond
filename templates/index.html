@@ -1,13 +1,12 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
+{% load static i18n %}
 {% block content %}
 <div class="banner">
 
     <div class="w3_banner_info_grid container" style="line-height:1.5em">
-        <h3 class="test">I'm Planting A Tree To Teach Me To Gather</h3>
-        <h3 class="testt">Strength From My Deepest Roots</h3>
-        <p>Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit
-            sollicitudin. Nunc tortor lorem, viverra sed diam ut, blandit efficitur leo.</p>
+        <h3 class="test">Agro Diamond is a guarantee of high productivity</h3>
+        <h3 class="testt"></h3>
+        <p></p>
         <ul>
             <li><a href="contact.html" class="w3l_contact">Contact Us</a></li>
             <li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">Read More</a></li>
@@ -25,11 +24,11 @@
 
 <div class="welcome">
 		<div class="container">
-			<h3 class="agileits_w3layouts_head">Welcome to our <span>Plantation</span></h3>
+			<h3 class="agileits_w3layouts_head">Our <span>partners</span></h3>
 			<div class="w3_agile_image text-center">
 				<img src="{% static 'images/1.png' %}" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">We work in cooperation with the world's top companies</p>
 		</div>
 <!---728x90--->
 
@@ -75,7 +74,7 @@
 
  <div class="slide-container swiper container">
      <div class="container mb-4">
-         <h3 class="agileits_w3layouts_head">Bizning<span> Mahsulotlar</span></h3>
+         <h3 class="agileits_w3layouts_head">{% translate 'Bizning<span> Mahsulotlar</span>' %}</h3>
          <div class="w3_agile_image text-center">
              <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive"/>
          </div>
@@ -93,7 +92,8 @@
                             <h5 class="card-title">{{ cat.name }}</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="{% url 'post' cat.id %}" class="btn btn-primary mt-2">Batafsil</a>
+                            <a href="{% url 'post' cat.id %}" class="btn btn-primary mt-2">
+                                {% translate 'Batafsil' %}</a>
                         </div>
                     </div>
                     {% endfor %}

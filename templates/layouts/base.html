@@ -55,13 +55,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-center me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active fs-5 me-4" aria-current="page" href="{% url 'home' %}" style="color: #2c810e">Home</a>
+                    <a class="nav-link active fs-5 me-4" aria-current="page" href="{% url 'home' %}" style="color: #2c810e">{% translate 'Bosh sahifa' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-5 me-4" href="#" style="color: #2c810e">About</a>
+                    <a class="nav-link fs-5 me-4" href="#" style="color: #2c810e">{% translate 'Biz haqimizda' %}</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="#" style="color: #2c810e">Contact Us</a>
+                    <a class="nav-link fs-5" href="#" style="color: #2c810e">{% translate 'Kontakt' %}</a>
                 </li>
 
 
@@ -84,9 +84,10 @@
         </div>
     </div>
 </nav>
-
+<div class="">
 {% block content %}
 {% endblock %}
+</div>
 
 </body>
 
@@ -140,12 +141,12 @@
                 <form class="">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-                        <input style="background: transparent" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+                        <input style="background: white" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
 
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label text-white">Phone Number</label>
-                        <input  style="background: transparent" type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                        <input  style="background: white" type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
                     </div>
 
                     <button type="submit" class="btn fs-5 btnn text-white mt-4">Order</button>
@@ -156,7 +157,7 @@
             <div class="border"></div>
             <div class="row">
                 <div class="col-lg-6 mt-5">
-                    <span class="fs-6 text-white">2023 © Все права защищены. Agro Diamond</span>
+                    <span class="fs-6 text-white">2023 © {% translate 'Barcha huquqlar himoyalangan' %}. AgroDiamond</span>
                 </div>
                 <div class="col-lg-6 mt-5">
                     <ul class="d-flex text-center mb-5 agileits_social_list">

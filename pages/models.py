@@ -36,10 +36,13 @@ class Category(TranslateMixin,models.Model):
 
 
 class Post(TranslateMixin,models.Model):
-    translate_attributes = ['nomi']
+    translate_attributes = ['nomi', 'content']
+
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     nomi_uz = models.CharField(max_length=50,verbose_name=_("Nomi (uz)"))
     nomi_en = models.CharField(max_length=50,verbose_name=_("Nomi (en)"))
+    content_uz = models.CharField(max_length=500, verbose_name=_("Content (uz)"), null=True, blank=True)
+    content_en = models.CharField(max_length=500, verbose_name=_("Content (en)"), null=True, blank=True)
     image = models.FileField(upload_to='media')
 
     def __str__(self):
