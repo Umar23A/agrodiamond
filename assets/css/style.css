@@ -54,6 +54,8 @@ ul {
 .btnn{
     background: #3cb012;
 }
+
+
 /*-- banner --*/
 .banner{
 	background: url(../images/background.png) no-repeat 0px 0px;
@@ -102,6 +104,11 @@ ul {
 .l li a{
     color: #fff;
     font-size: 1.5em;
+}
+
+.logincontainer{
+   backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 a.w3_agile_facebook:hover{
@@ -284,7 +291,7 @@ a.w3_agile_vimeo:hover{
 }
 .w3_banner_info_grid ul li{
 	display:inline-block;
-	font-size:1em;
+	font-size:1.5em;
 }
 .w3_banner_info_grid ul li a{
 	padding:10px 40px;
@@ -293,11 +300,11 @@ a.w3_agile_vimeo:hover{
 	color:#212121;
 }
 .w3l_contact,.w3ls_more:hover{
-	border:2px solid #fff;
-	background:none;
+	border:4px solid #fff;
+	background:#a4dd25;
 }
 .w3ls_more,.w3l_contact:hover{
-	border:2px solid #a4dd25;
+	border:4px solid #a4dd25;
 	background:#a4dd25;
 	color:#212121 !important;
 }
@@ -310,6 +317,7 @@ span.char3 {
 .txt{
     font-family: "Bree Serif", serif;
 }
+
 .w3_banner_info_grid p{
 	margin:1em 0 4em;
 	color:#fff;
@@ -3530,5 +3538,61 @@ bodyy{
 
 a.w3_agile_instagram:hover{
 	color:#ea4c89;
+}
+
+.btx:hover {
+  background-color: #2c810e;
+  color: white;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 100% 100%;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.main_form input {
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 2px solid #e9d7dc;
+    max-width: 300px;
+    width: 100%;
+}
+.main_form textarea {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 2px solid #e9d7dc;
+    max-width: 300px;
+    width: 100%;
+    height: 100px;
+}
+.main_form label {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.main_form button {
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+    border-radius: 5px;
+    background-position: 1.35em .94em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    transition: all .15s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 260px;
+    margin-bottom: 40px;
 }
 

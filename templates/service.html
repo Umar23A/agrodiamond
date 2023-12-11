@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+{% block content %}
+
+    <div class="container">
+        {% for service in services %}
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-center">
+                    {% if service.video %}
+                        <video class="img-fluid" controls="" poster="{% static 'images/service.png' %}">
+                            <source src="{{ service.video.url }}" type="video/mp4">
+                        </video>
+                    {%  endif %}
+                </div>
+            </div>
+             <div class="col-lg-6">
+                <h3 class="text-center mt-3 mb-3">{{ service.subject }}</h3>
+                 <div class="mb-3">
+                     {{ service.content }}
+                 </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

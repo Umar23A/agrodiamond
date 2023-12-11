@@ -51,3 +51,19 @@ class Post(TranslateMixin,models.Model):
     class Meta:
         verbose_name = 'Tovar nomi'
         verbose_name_plural = 'Tovar nomlari'
+
+
+class Service(TranslateMixin, models.Model):
+    translate_attributes = ['subject', 'content']
+    video = models.FileField(upload_to='video/')
+    subject_uz = models.CharField(max_length=50, verbose_name=_("Subject (uz)"), null=True, blank=True)
+    subject_en = models.CharField(max_length=50, verbose_name=_("Subject (en)"), null=True, blank=True)
+    content_uz = models.CharField(max_length=10000, verbose_name=_("Content (uz)"), null=True, blank=True)
+    content_en = models.CharField(max_length=10000, verbose_name=_("Content (en)"), null=True, blank=True)
+
+    def __str__(self):
+        return self.subject_uz
+
+    class Meta:
+        verbose_name = 'Servis nomi'
+        verbose_name_plural = 'Servis nomlari'

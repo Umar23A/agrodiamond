@@ -4,12 +4,11 @@
 <div class="banner">
 
     <div class="w3_banner_info_grid container" style="line-height:1.5em">
-        <h3 class="test">Agro Diamond is a guarantee of</h3>
-        <h3 class="testt">high productivity</h3>
+        <h3 class="test">{% translate 'Agro Diamond - bu yuqori mahsuldorlik garovidir' %}</h3>
         <h3 class="testt"></h3>
         <p></p>
         <ul>
-              <li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">Read More</a></li>
+              <li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">{% translate 'Batafsil' %}</a></li>
 
 
         </ul>
@@ -23,14 +22,38 @@
 
 
 </div>
+    <div class="container mt-5 mb-5" id="about">
+        <h3 class="agileits_w3layouts_head pt-5">{% translate 'Biz<span> haqimizda</span>' %}</h3>
+        <div class="w3_agile_image text-center">
+            <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive"/>
+        </div>
+        <div class="row fs-4 mt-4">
+            <div class="col-lg-6">
+                <div class="text-center shadow">
+                    <img class="img-fluid" src="{% static 'images/agrodiamond.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="txt" style="text-align: justify">
+                    {% translate "Agro Diamond kompaniyasi ko'p yllardan beri mijozlarga sifatli xizmat ko'rsatib kelmoqda. Bizning kompaniya asosan ikki yo'nalish, ya'ni agro ozuqa va ximikatlar sotuvi bilan shug'ullanib keladi! Kompaniyamiz faqatgina sotish bilan kifoyalanib qolmay, 2 xil turdagi xizmatlarni ham taqdim etadi:" %}</div>
+                    <div class="mt-2 mb-2">1){% translate "Malakali turk agronomlar maslahat xizmati." %}</div>
+                        <div>{% translate "2)Muammolardan kelib chiqib kompaniya tarafidan issiqxona va bog'larga borib dorilab berish xizmati mavjud!" %}
+                    </div>
+                <hr>
+                </div>
+
+            </div>
+        </div>
+
+
 
 <div class="welcome">
 		<div class="container">
-			<h3 class="agileits_w3layouts_head">Our <span>partners</span></h3>
+			<h3 class="agileits_w3layouts_head">{% translate 'Bizning <span>hamkorlar</span>' %}</h3>
 			<div class="w3_agile_image text-center">
 				<img src="{% static 'images/1.png' %}" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">We work in cooperation with the world's top companies</p>
+			<p class="agile_para">{% translate 'Biz dunyoning yetakchi kompaniyalari bilan hamkorlikda ishlaymiz' %}</p>
 		</div>
 <!---728x90--->
 
@@ -40,32 +63,32 @@
             <li class="mis-slide">
                 <figure>
                     <img src="{% static 'images/brand2.jpg' %}" alt=" " class="img-responsive"/>
-                    <figcaption>Strawberry</figcaption>
+                    <figcaption>YARA</figcaption>
                 </figure>
             </li>
 
             <li class="mis-slide">
                 <figure>
                     <img src="{% static 'images/brand4.jpg' %}" alt=" " class="img-responsive"/>
-                    <figcaption>Pomegranates</figcaption>
+                    <figcaption>BAYER</figcaption>
                 </figure>
             </li>
             <li class="mis-slide">
                 <figure>
                     <img src="{% static 'images/brand5.jpg' %}" alt=" " class="img-responsive"/>
-                    <figcaption>Lemon</figcaption>
+                    <figcaption>HEKTAS</figcaption>
                 </figure>
             </li>
             <li class="mis-slide">
                 <figure>
                     <img src="{% static 'images/brand6.jpg' %}" alt=" " class="img-responsive"/>
-                    <figcaption>Kiwi Fruits</figcaption>
+                    <figcaption>FMC</figcaption>
                 </figure>
             </li>
             <li class="mis-slide">
                 <figure>
-                    <img src="{% static 'images/brand1.webp' %}" alt=" " class="img-responsive"/>
-                    <figcaption>Apples</figcaption>
+                    <img src="{% static 'images/brand1.webp' %}" alt="" class="img-responsive"/>
+                    <figcaption>Haifa</figcaption>
                 </figure>
             </li>
         </ol>
@@ -74,7 +97,7 @@
 
 <bodyy>
 
- <div class="slide-container swiper container">
+ <div class="slide-container swiper container" id="products">
      <div class="container mb-4">
          <h3 class="agileits_w3layouts_head">{% translate 'Bizning<span> Mahsulotlar</span>' %}</h3>
          <div class="w3_agile_image text-center">
@@ -94,7 +117,7 @@
                             <h5 class="card-title">{{ cat.name }}</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="{% url 'post' cat.id %}" class="btn btn-primary mt-2">
+                            <a href="{% url 'post' cat.id %}" class="btn text-white mt-2 fs-5 btn-lg" style="background: #a0d034">
                                 {% translate 'Batafsil' %}</a>
                         </div>
                     </div>
@@ -107,5 +130,62 @@
             <div class="swiper-pagination"></div>
         </div>
 </bodyy>
+
+    <div class="container mb-5" id="service">
+   <h3 class="agileits_w3layouts_head mt-5">{% translate 'Bizning<span> Xizmatlar</span>' %}</h3>
+			<div class="w3_agile_image text-center mb-5">
+				<img src="{% static 'images/1.png' %}" alt=" " class="img-responsive" />
+			</div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-center mb-4 border border-2 shadow">
+                    <img class="img-fluid" src="{% static 'images/callcenter.png' %}" alt="">
+                    <hr>
+                    <h4 class="text-center mb-3">
+                        <a type="button" class="btn fs-5 btn-lg border btx" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            {% translate 'Mutaxassis xizmati' %}  >
+                        </a>
+                    </h4>
+                    <!-- Button trigger modal -->
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-2">
+                                    Service exports can include a wide range of activities such as transportation,
+                                    tourism, telecommunications, financial and insurance services,
+                                    computer and information services, business and professional services, and many others.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="text-center mb-4 border border-2 shadow">
+                    <img width="563" class="img-fluid" src="{% static 'images/service.png' %}" alt="">
+                    <hr>
+                    <h4 class="text-center mb-3">
+                        <a class="btn btn-lg border btx" style="text-decoration: none;" href="{% url 'service' %}">
+                            {% translate 'Amaliy xizmat' %} ></a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 

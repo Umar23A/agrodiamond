@@ -122,8 +122,8 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 LANGUAGES = (
-    ('uz', "uz |"),
-    ('en', "en")
+    ('uz', "Uzbek"),
+    ('en', "English")
 )
 LOCALE_PATHS = [
     BASE_DIR / 'locales'

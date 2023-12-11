@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 01:53+0500\n"
+"POT-Creation-Date: 2023-12-11 20:21+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1484,45 +1484,132 @@ msgstr ""
 msgid "Nomi (en)"
 msgstr ""
 
-#: pages/models.py:44
+#: pages/models.py:44 pages/models.py:61
 msgid "Content (uz)"
 msgstr ""
 
-#: pages/models.py:45
+#: pages/models.py:45 pages/models.py:62
 msgid "Content (en)"
 msgstr ""
 
+#: pages/models.py:59
+msgid "Subject (uz)"
+msgstr ""
+
+#: pages/models.py:60
+msgid "Subject (en)"
+msgstr ""
+
 #: pages/views.py:8 templates/layouts/base.html:59
+#: templates/layouts/base.html:140
 msgid "Bosh sahifa"
 msgstr "Home"
 
 #: pages/views.py:16
-msgid "Mahsulotlar"
-msgstr "Products"
+#, fuzzy
+#| msgid "Bizning<span> Mahsulotlar</span>"
+msgid "Bizning Mahsulotlar"
+msgstr "Our<span> Products</span>"
 
-#: templates/index.html:78
+#: pages/views.py:25 templates/layouts/base.html:68
+#: templates/layouts/base.html:149
+msgid "Bizning xizmatlar"
+msgstr "Our services"
+
+#: templates/index.html:7
+msgid "Agro Diamond - bu yuqori mahsuldorlik garovidir"
+msgstr "Agro Diamond is a guarantee of high productivity"
+
+#: templates/index.html:11 templates/index.html:121
+msgid "Batafsil"
+msgstr "Read More"
+
+#: templates/index.html:26
+#, fuzzy
+#| msgid "Bizning<span> Xizmatlar</span>"
+msgid "Biz<span> haqimizda</span>"
+msgstr "About<span> Us</span>"
+
+#: templates/index.html:38
+msgid ""
+"Agro Diamond kompaniyasi ko'p yllardan beri mijozlarga sifatli xizmat "
+"ko'rsatib kelmoqda. Bizning kompaniya asosan ikki yo'nalish, ya'ni agro "
+"ozuqa va ximikatlar sotuvi bilan shug'ullanib keladi! Kompaniyamiz faqatgina "
+"sotish bilan kifoyalanib qolmay, 2 xil turdagi xizmatlarni ham taqdim etadi:"
+msgstr ""
+"The Agro Diamond company has been providing quality service to customers for "
+"many years. Our company is mainly engaged in two areas: the sale of "
+"agricultural feed and chemicals! Our company is not limited only to sales, "
+"but also provides 2 types of services:"
+
+#: templates/index.html:39
+msgid "Malakali turk agronomlar maslahat xizmati."
+msgstr "Consultancy service of qualified Turkish agronomists."
+
+#: templates/index.html:40
+msgid ""
+"2)Muammolardan kelib chiqib kompaniya tarafidan issiqxona va bog'larga borib "
+"dorilab berish xizmati mavjud!"
+msgstr ""
+"2)Based on the problems, the company has a service to go to greenhouses and "
+"gardens and give medicine!"
+
+#: templates/index.html:52
+msgid "Bizning <span>hamkorlar</span>"
+msgstr "Our <span>partners</span>"
+
+#: templates/index.html:56
+msgid "Biz dunyoning yetakchi kompaniyalari bilan hamkorlikda ishlaymiz"
+msgstr "We work in cooperation with the world's leading companies"
+
+#: templates/index.html:102
 msgid "Bizning<span> Mahsulotlar</span>"
 msgstr "Our<span> Products</span>"
 
-#: templates/index.html:97
-msgid "Batafsil"
-msgstr "More"
+#: templates/index.html:135
+msgid "Bizning<span> Xizmatlar</span>"
+msgstr "Our<span> Services</span>"
 
-#: templates/layouts/base.html:62
+#: templates/index.html:147
+msgid "Mutaxassis xizmati"
+msgstr "Expert service"
+
+#: templates/index.html:184
+msgid "Amaliy xizmat"
+msgstr "Practical service"
+
+#: templates/layouts/base.html:62 templates/layouts/base.html:146
+msgid "Mahsulotlar"
+msgstr "Products"
+
+#: templates/layouts/base.html:65 templates/layouts/base.html:143
 msgid "Biz haqimizda"
-msgstr "About"
+msgstr "About Us"
 
-#: templates/layouts/base.html:65
-msgid "Bizning servis"
-msgstr "Our Services"
-
-#: templates/layouts/base.html:68
+#: templates/layouts/base.html:71 templates/layouts/base.html:152
 msgid "Kontakt"
-msgstr "Contact Us"
+msgstr "Contact"
 
-#: templates/layouts/base.html:165
+#: templates/layouts/base.html:158
+msgid "Buyurtma berish"
+msgstr "Order"
+
+#: templates/layouts/base.html:160 templates/layouts/base.html:161
+msgid "Kompaniya nomi"
+msgstr "Company name"
+
+#: templates/layouts/base.html:162 templates/layouts/base.html:164
+msgid "Telefon raqam"
+msgstr "Telephone number"
+
+#: templates/layouts/base.html:168
+msgid "Yuborish"
+msgstr "Send"
+
+#: templates/layouts/base.html:183
+msgid "So'rovingiz qabul qilindi, 24 soat ichida siz bilan bog'lanamiz"
+msgstr "Your request has been received, we will contact you within 24 hours"
+
+#: templates/layouts/base.html:195
 msgid "Barcha huquqlar himoyalangan"
 msgstr "All rights reserved"
-
-#~ msgid "Ushbu kategoriyada post mavjud emas"
-#~ msgstr "There are no posts in this category"
