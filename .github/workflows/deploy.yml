@@ -1,0 +1,72 @@
+name: Deployment workflow
+on:
+  push:
+    branches: [ "dev" ]
+
+jobs:
+  deployment:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+      - name: Log in to Docker Hub
+        env:
+          DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+        run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+
+      - name: Build the Docker image
+        run: docker build -t agrodiamond . && docker tag agrodiamond khadya/agrodiamond
+
+
+      - name: Docker push
+        run: docker push khadya/agrodiamond
+
+
+      - name: Log in to Server and Restarting Kubernetes
+        uses: appleboy/ssh-action@master
+        with:
+          host: 161.35.186.69
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /root/Projects/agrodiamond
+            ls
+            docker-compose down
+            docker image prune
+            docker rmi $(docker images 'khadya/agrodiamond' -a -q)
+            docker-compose up --build -d
+
+
+      - name: Telegram Notifications on Success
+        if: ${{ success() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: markdown
+          message: |
+            ${{ github.actor }} successfully created commit ✅✅✅:
+             Commit message: ${{ github.event.commits[0].message }}
+             Repository: ${{ github.repository }}
+             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+
+
+      - name: Telegram Notifications on Failure
+        if: ${{ failure() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: markdown
+          message: |
+            ${{ github.actor }} failed created commit ❌❌❌:
+             Commit message: ${{ github.event.commits[0].message }}
+             Repository: ${{ github.repository }}
+             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+
