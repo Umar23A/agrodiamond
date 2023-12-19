@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-11 20:21+0500\n"
+"POT-Creation-Date: 2023-12-19 11:54+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1506,15 +1506,13 @@ msgid "Bosh sahifa"
 msgstr "Home"
 
 #: pages/views.py:16
-#, fuzzy
-#| msgid "Bizning<span> Mahsulotlar</span>"
 msgid "Bizning Mahsulotlar"
-msgstr "Our<span> Products</span>"
+msgstr "Our Products"
 
 #: pages/views.py:25 templates/layouts/base.html:68
 #: templates/layouts/base.html:149
 msgid "Bizning xizmatlar"
-msgstr "Our services"
+msgstr "Our Services"
 
 #: templates/index.html:7
 msgid "Agro Diamond - bu yuqori mahsuldorlik garovidir"
@@ -1525,8 +1523,6 @@ msgid "Batafsil"
 msgstr "Read More"
 
 #: templates/index.html:26
-#, fuzzy
-#| msgid "Bizning<span> Xizmatlar</span>"
 msgid "Biz<span> haqimizda</span>"
 msgstr "About<span> Us</span>"
 
@@ -1537,10 +1533,10 @@ msgid ""
 "ozuqa va ximikatlar sotuvi bilan shug'ullanib keladi! Kompaniyamiz faqatgina "
 "sotish bilan kifoyalanib qolmay, 2 xil turdagi xizmatlarni ham taqdim etadi:"
 msgstr ""
-"The Agro Diamond company has been providing quality service to customers for "
-"many years. Our company is mainly engaged in two areas: the sale of "
-"agricultural feed and chemicals! Our company is not limited only to sales, "
-"but also provides 2 types of services:"
+"Agro Diamond company has been providing quality customer service for many "
+"yearshas been showing. Our company mainly has two directions, that is, "
+"agrohas been engaged in the sale of food and chemicals! Our company only "
+"doesn't just sell, it also provides 2 types of services:"
 
 #: templates/index.html:39
 msgid "Malakali turk agronomlar maslahat xizmati."
@@ -1551,8 +1547,6 @@ msgid ""
 "2)Muammolardan kelib chiqib kompaniya tarafidan issiqxona va bog'larga borib "
 "dorilab berish xizmati mavjud!"
 msgstr ""
-"2)Based on the problems, the company has a service to go to greenhouses and "
-"gardens and give medicine!"
 
 #: templates/index.html:52
 msgid "Bizning <span>hamkorlar</span>"
