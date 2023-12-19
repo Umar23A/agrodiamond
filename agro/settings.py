@@ -82,9 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'agrodiamond', 
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '138.197.10.227', 
-        'PORT': '5432',
+        'PASSWORD': 'postgres123',
+        'HOST': '146.190.154.138', 
+        'PORT': '30032',
     }
 }
 
