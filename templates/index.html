@@ -112,6 +112,7 @@
                     <div class="card swiper-slide text-center" style="width: 18rem;">
                         {% if cat.file %}
                             <a href="{% url 'post' cat.id %}"><img src="{{ cat.file.url }}" class="card-img-top card-image" alt="..."></a>
+                            <hr>
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ cat.name }}</h5>
