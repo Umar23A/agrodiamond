@@ -1,4 +1,4 @@
-#!/Users/umarabdulaziz/Documents/abdulaziz23/projects/agrodiamond/venv/bin/python3
+#!/home/ismoil/agrodiamond/venv/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
