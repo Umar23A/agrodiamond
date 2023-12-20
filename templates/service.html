@@ -3,7 +3,7 @@
 {% block content %}
 
     <div class="container">
-    <h2 class="text-center">{% translate 'Bizning xizmatlar' %}</h2>
+    <h2 class="text-center" style="color: #2c810e">{% translate 'Bizning xizmatlar' %}</h2>
         {% for service in services %}
         <div class="d-flex mt-5 mb-5">
 
@@ -14,13 +14,12 @@
                         </video>
                     {%  endif %}
                 </div>
-                 <div class="p-3" style="background: #e7e7e78c">
+                 <div class="p-3 shadow" style="background: #e7e7e78c">
                      <h3 class="text-center mt-3 mb-3">{{ service.subject }}</h3>
                      <div class="mb-3">
                          {{ service.content }}
                      </div>
                  </div>
-
         </div>
     {% endfor %}
     </div>
