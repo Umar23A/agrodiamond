@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 14:13+0500\n"
+"POT-Creation-Date: 2023-12-20 15:34+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1244,7 +1244,7 @@ msgid "Bizning Mahsulotlar"
 msgstr "Our Products"
 
 #: pages/views.py:25 templates/layouts/base.html:68
-#: templates/layouts/base.html:149
+#: templates/layouts/base.html:149 templates/service.html:6
 msgid "Bizning xizmatlar"
 msgstr "Our Services"
 
@@ -1252,7 +1252,7 @@ msgstr "Our Services"
 msgid "Agro Diamond - bu yuqori mahsuldorlik garovidir"
 msgstr "Agro Diamond is a guarantee of high productivity"
 
-#: templates/index.html:11 templates/index.html:121
+#: templates/index.html:11 templates/index.html:122
 msgid "Batafsil"
 msgstr "Read More"
 
@@ -1296,15 +1296,15 @@ msgstr "We work in cooperation with the world's leading companies"
 msgid "Bizning<span> Mahsulotlar</span>"
 msgstr "Our<span> Products</span>"
 
-#: templates/index.html:135
+#: templates/index.html:136
 msgid "Bizning<span> Xizmatlar</span>"
 msgstr "Our<span> Services</span>"
 
-#: templates/index.html:147
+#: templates/index.html:148
 msgid "Mutaxassis xizmati"
 msgstr "Expert service"
 
-#: templates/index.html:184
+#: templates/index.html:185
 msgid "Amaliy xizmat"
 msgstr "Practical service"
 
