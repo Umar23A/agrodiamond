@@ -5,16 +5,16 @@
     <div class="container">
     <h2 class="text-center mt-4" style="color: #2c810e">{% translate 'Bizning xizmatlar' %}</h2>
         {% for service in services %}
-        <div class="d-flex mt-5 mb-5">
+        <div class="d-flex mt-5 mb-5 row">
 
-                <div class="text-center">
+                <div class="text-center col-lg-6 col-12">
                     {% if service.video %}
-                        <video style="width: 600px" class="" controls="">
+                        <video style="width: 600px" class="img-fluid" controls="">
                             <source src="{{ service.video.url }}" type="video/mp4">
                         </video>
                     {%  endif %}
                 </div>
-                 <div class="p-3 shadow" style="background: #e7e7e78c">
+                 <div class="p-3 shadow col-lg-6 col-12" style="background: #e7e7e78c">
                      <h3 class="text-center mt-3 mb-3">{{ service.subject }}</h3>
                      <div class="mb-3">
                          {{ service.content }}
