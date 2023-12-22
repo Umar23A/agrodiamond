@@ -157,17 +157,20 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">{% translate 'AGRONOM MASLAHATI' %}</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body p-2">
-                                    Service exports can include a wide range of activities such as transportation,
-                                    tourism, telecommunications, financial and insurance services,
-                                    computer and information services, business and professional services, and many others.
+                                    <div class="text-center">
+                                        <img width="400" class="img-fluid" src="{% static 'images/agronom.jpg' %}" alt="">
+                                    </div>
+                                    <div class="fs-5">
+                                        {% translate 'AGRODIAMOND bilan hamkorlik qilayotganingizda siz muntazam ravishda malakali turk agranomlaridan konsultatsiya olishingiz mumkin!' %}
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% translate 'Yopish' %}
                                     </button>
                                 </div>
                             </div>

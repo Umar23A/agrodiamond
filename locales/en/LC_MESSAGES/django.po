@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 15:34+0500\n"
+"POT-Creation-Date: 2023-12-22 16:05+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1268,9 +1268,9 @@ msgid ""
 "sotish bilan kifoyalanib qolmay, 2 xil turdagi xizmatlarni ham taqdim etadi:"
 msgstr ""
 "Agro Diamond company has been providing quality customer service for many "
-"yearshas been showing. Our company mainly has two directions, that is, "
-"agrohas been engaged in the sale of food and chemicals! Our company only "
-"doesn't just sell, it also provides 2 types of services:"
+"years. Our company has been engaged in the sale of agricultural feed and "
+"chemicals mainly in two areas! Our company is not satisfied only with sales, "
+"but also provides 2 types of services:"
 
 #: templates/index.html:39
 msgid "Malakali turk agronomlar maslahat xizmati."
@@ -1304,7 +1304,23 @@ msgstr "Our<span> Services</span>"
 msgid "Mutaxassis xizmati"
 msgstr "Expert service"
 
-#: templates/index.html:185
+#: templates/index.html:160
+msgid "AGRONOM MASLAHATI"
+msgstr "AGRONOMIST ADVICE"
+
+#: templates/index.html:169
+msgid ""
+"AGRODIAMOND bilan hamkorlik qilayotganingizda siz muntazam ravishda malakali "
+"turk agranomlaridan konsultatsiya olishingiz mumkin!"
+msgstr ""
+"When cooperating with AGRODIAMOND, you can regularly receive consultations "
+"from qualified Turkish agronomists!"
+
+#: templates/index.html:173
+msgid "Yopish"
+msgstr "Close"
+
+#: templates/index.html:188
 msgid "Amaliy xizmat"
 msgstr "Practical service"
 
