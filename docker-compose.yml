@@ -1,7 +1,43 @@
-version: "3"
+version: "3.9"
+
 services:
-  agrodiamond:
-    build: .
-    # image: khadya/agrodiamond:latest
+  djangoapp:
+    container_name: agrodiamond
+    image: khadya/agrodiamond:latest
+    # build: .
     ports:
-      - 8023:8000
+      - "8023:8000"
+    environment:
+      - PG_USER=postgres
+      - PG_PASSWORD=postgres
+      - PG_DB=postgres
+      - PG_PORT=5433
+      - PG_HOST=db
+    volumes:
+      - ./media:/agrodiamond/media
+    network_mode: host
+    depends_on:
+      - db
+    networks:
+      - agrodiamond
+
+  agrodiamond:
+    container_name: db
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    
+    networks:
+      - agrodiamond
+
+volumes:
+  pgdata: {}
+
+networks:
+  agrodiamond:

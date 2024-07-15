@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'agro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'agrodiamond', 
+        'NAME': 'postgres', 
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': '64.225.59.249', 
-        'PORT': '30032',
+        'HOST': 'agrodiamond', 
+        'PORT': '5433',
     }
 }
 
