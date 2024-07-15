@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'agrodiamond', 
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'db', 
+        'HOST': '161.35.186.69', 
         'PORT': '5432',
     }
 }
